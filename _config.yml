@@ -15,17 +15,17 @@ defaults:
       values:
           layout: "post"
 
-projects:
-    sort_by: pushed
-    # sort_by options:
-    #   - pushed
-    #   - stars
-    limit: 9
-    exclude:
-        archived: false
-        forks: true
-        projects:
-        # - repo-name
+# projects:
+#     sort_by: pushed
+#     # sort_by options:
+#     #   - pushed
+#     #   - stars
+#     limit: 9
+#     exclude:
+#         archived: false
+#         forks: true
+#         projects:
+#         # - repo-name
 
 social_media:
     # behance: your_username
@@ -44,14 +44,13 @@ social_media:
     # vk: your_username
     # website: http://your_website_url
     youtube: UCE86Qx7We3sZjgqMrX2yfyg
+# topics:
+#     - name: CSS
+#       web_url: https://github.com/topics/css
+#       image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
 
-topics:
-    - name: CSS
-      web_url: https://github.com/topics/css
-      image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
+#     - name: Web design
 
-    - name: Web design
-
-    - name: Sass
-      web_url: https://github.com/topics/sass
-      image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+#     - name: Sass
+#       web_url: https://github.com/topics/sass
+#       image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
