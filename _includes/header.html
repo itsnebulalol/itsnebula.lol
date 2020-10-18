@@ -1,4 +1,4 @@
-{% if site.style == 'dark' %}
+<!-- {% if site.style == 'dark' %}
   {% assign icon_color = "#ffffff" %}
 {% else %}
   {% assign icon_color = "#24292e" %}
@@ -16,18 +16,50 @@
 {% else %}
   {% assign page_title = user.name %}
   {% assign meta_description = user.bio | strip_html | strip_newlines | xml_escape | truncate: 300 %}
-{% endif %}
+{% endif %} -->
 
-<!doctype html>
+<!DOCTYPE html>
 <html class="min-height-full">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page_title }}</title>
-    <meta name="description" content="{{ meta_description }}" />
-    <meta property="og:title" content="{{ user.name }}" />
-    <meta property="og:image" content="{{ user.avatar_url }}" />
-    <meta property="og:description" content="{{ meta_description }}" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="{{ "/assets/styles.css" | relative_url }}" rel="stylesheet" type="text/css">
-  </head>
-  <body class="bg-white min-height-full" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
+	<head>
+		<meta charset="utf-8" />
+		<title>{{ page_title }}</title>
+		<meta name="description" content="{{ meta_description }}" />
+		<meta property="og:title" content="{{ user.name }}" />
+		<meta property="og:image" content="{{ user.avatar_url }}" />
+		<meta property="og:description" content="{{ meta_description }}" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<link href="{{ "/assets/styles.css" | relative_url }}" rel="stylesheet"
+		type="text/css">
+		<script defer src="{{ "/assets/js/mobile-menu.js" | relative_url }}"></script>
+	</head>
+	<body>
+		<header {% if site.style == 'dark' %}style="background-color: #24252a !important"{% endif %}>
+			<a class="logo" href="/">
+				<img 
+					{% if site.style == 'light' %}
+						src="{{ "/assets/images/logo-dark.svg" | relative_url }}"
+					{% elsif site.style == 'dark' %}
+						src="{{ "/assets/images/logo.svg" | relative_url }}"
+					{% endif %} 
+				alt="logo"/>
+			</a>
+			<nav>
+				<ul class="nav-links">
+					<li><a href="https://github.com/itsnebulalol" {% if site.style == 'light' %}style="color: #24252a !important"{% endif %}>GitHub</a></li>
+					<li><a href="https://www.youtube.com/channel/UCE86Qx7We3sZjgqMrX2yfyg" {% if site.style == 'light' %}style="color: #24252a !important"{% endif %}>YouTube</a></li>
+				</ul>
+			</nav>
+			<a class="cta" href="#">Downloads</a>
+			<p class="menu cta">Menu</p>
+		</header>
+		<div id="mobile-menu" class="overlay" {% if site.style == 'dark' %}style="background-color: #24252a !important"{% endif %}>
+			<a class="close" {% if site.style == 'light' %}style="color: #24252a !important"{% endif %}>&times;</a>
+			<div class="overlay-content">
+				<a href="https://github.com/itsnebulalol" {% if site.style == 'light' %}style="color: #24252a !important"{% endif %}>GitHub</a>
+				<a href="https://www.youtube.com/channel/UCE86Qx7We3sZjgqMrX2yfyg" {% if site.style == 'light' %}style="color: #24252a !important"{% endif %}>YouTube</a>
+				<a href="#" {% if site.style == 'light' %}style="color: #24252a !important"{% endif %}>Downloads</a>
+			</div>
+		</div>

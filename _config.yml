@@ -1,5 +1,5 @@
 layout: sidebar
-style: light
+style: dark
 
 plugins:
     - jekyll-octicons
@@ -37,13 +37,13 @@ social_media:
     # linkedin: your_username
     # mastodon: your_username
     # medium: your_username
-    stackoverflow: 6052032
+    # stackoverflow: 6052032
     # telegram: your_username
     # twitter: your_username
     # unsplash: your_username
     # vk: your_username
     # website: http://your_website_url
-    youtube: UCE86Qx7We3sZjgqMrX2yfyg
+    # youtube: UCE86Qx7We3sZjgqMrX2yfyg
 # topics:
 #     - name: CSS
 #       web_url: https://github.com/topics/css
