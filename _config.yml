@@ -37,13 +37,13 @@ social_media:
     # linkedin: your_username
     # mastodon: your_username
     # medium: your_username
-    # stackoverflow: 6052032
+    stackoverflow: 6052032
     # telegram: your_username
     # twitter: your_username
     # unsplash: your_username
     # vk: your_username
     # website: http://your_website_url
-    # youtube: UCE86Qx7We3sZjgqMrX2yfyg
+    youtube: UCE86Qx7We3sZjgqMrX2yfyg
 # topics:
 #     - name: CSS
 #       web_url: https://github.com/topics/css
@@ -54,3 +54,9 @@ social_media:
 #     - name: Sass
 #       web_url: https://github.com/topics/sass
 #       image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+
+downloads:
+    - name: Test
+      description: This is just a test item
+      image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
+      download_url: https://example.com
